@@ -1,0 +1,256 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>About Me: Jeremy Peralta</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  </head>
+  <style>
+    body {
+        background-image: url(Background.jpeg);
+    }
+    table, th, td {
+  border: 1px solid;
+}
+body {
+  font-family: Arial;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  vertical-align: middle;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+  </style>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="Home.html">Jeremy Peralta</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="Home.html">Home</a>
+                  </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="AboutMe.html">About Me</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="ContactMe.html">Contact Me</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="WorkExperience.html">Work Experience</a>
+              </li>
+          </div>
+        </div>
+      </nav>
+      
+    <table style="margin-left: auto; margin-right:auto ">
+      <tr style="color: white; text-align: center;">
+        <th>Major</th>
+        <th>Hobbies</th> 
+        <th>Skills</th>
+      </tr>
+      <tr style="color: white; text-align: center;">
+        <td>Information Technology</td>
+        <td>Car Tuning</td> 
+        <td>Microsoft Office</td>
+      </tr>
+      <tr style="color: white; text-align: center;">
+        <td></td>
+        <td>Latest Technology</td> 
+        <td>Video Editing</td>
+      </tr>
+      <tr style="color: white; text-align: center;">
+        <td></td>
+        <td></td> 
+        <td>Manual Transmission Driver</td>
+      </tr>
+    </table>
+    <div class="container">
+      <div class="mySlides">
+        <div class="numbertext">1 / 7</div>
+        <img src="1stCar.jpeg" style="width:100%">
+      </div>
+    
+      <div class="mySlides">
+        <div class="numbertext">2 / 7</div>
+        <img src="1stCorolla.jpeg" style="width:100%">
+      </div>
+    
+      <div class="mySlides">
+        <div class="numbertext">3 / 7</div>
+        <img src="Corolla.jpeg" style="width:100%" >
+      </div>
+        
+      <div class="mySlides">
+        <div class="numbertext">4 / 7</div>
+        <img src="RAV4.jpeg" style= "width:100%">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">5 / 7</div>
+        <img src="Canon_Camera.jpeg" style= "width:100%">
+      </div>
+      <div class="mySlides">
+        <div class="numbertext">6 / 7</div>
+        <img src="Office_Logo.png" style= "width:100%">
+      </div>
+      <div class="mySlides">
+        <div class="numbertext">7 / 7</div>
+        <img src="Manual_Car.webp" style= "width:100%">
+      </div>
+      <a class="prev" onclick="plusSlides(-1)">❮</a>
+      <a class="next" onclick="plusSlides(1)">❯</a>
+    
+      <div class="caption-container">
+        <p id="caption"></p>
+      </div>
+    
+      <div class="row">
+        <div class="column">
+          <img class="demo cursor" src="1stCar.jpeg" style="width:100%" onclick="currentSlide(1)" alt="My First Car">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="1stCorolla.jpeg" style="width:100%" onclick="currentSlide(2)" alt="First Corolla">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="Corolla.jpeg" style="width:100%" onclick="currentSlide(3)" alt="My Current Corolla">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="RAV4.jpeg" style="width:100%" onclick="currentSlide(4)" alt="My Second Current Car">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="Canon_Camera.jpeg" style="width:100%" onclick="currentSlide(5)" alt="Camera I Own">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="Office_Logo.png" style="width:100%" onclick="currentSlide(6)" alt="Microsoft Office">
+  </div>
+  <div class="column">
+    <img class="demo cursor" src="Manual_Car.webp" style="width:100%" onclick="currentSlide(7)" alt="Manual Transmission">
+</div>
+    </div>
+    
+    <script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+    
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("demo");
+      let captionText = document.getElementById("caption");
+      if (n > slides.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";
+      dots[slideIndex-1].className += " active";
+      captionText.innerHTML = dots[slideIndex-1].alt;
+    }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js" integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous"></script><script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+  </body>
+</html>
